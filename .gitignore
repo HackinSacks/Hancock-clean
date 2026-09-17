@@ -1,0 +1,17 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+outputs/
+*.gguf
+data/*.json
+data/*.jsonl
+!data/.gitkeep
+*.log
+.DS_Store
+hancock.egg-info/
+dist/
+build/
