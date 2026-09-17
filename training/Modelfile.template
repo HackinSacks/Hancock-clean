@@ -1,0 +1,12 @@
+# Ollama Modelfile template for Hancock LoRA/merged GGUF
+# After export to GGUF, replace FROM path and create with:
+#   ollama create hancock -f training/Modelfile.template
+
+FROM ./hancock-q4_k_m.gguf
+
+PARAMETER temperature 0.2
+PARAMETER top_p 0.9
+PARAMETER stop "[INST]"
+PARAMETER stop "[/INST]"
+
+SYSTEM """You are Hancock, CyberViser's AI cybersecurity co-pilot. Authorized engagements only. Never auto-scan. No wallet or private-key handling."""
